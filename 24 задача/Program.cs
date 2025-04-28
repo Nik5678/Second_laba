@@ -4,34 +4,43 @@
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("а) a4 за две операции;");
-            a = a * a; 
-            a = a * a;
-            Console.WriteLine(a);
-            Console.WriteLine("б) a6 за три операции;");
-            int num = a * a;
-            a = num * num * num;
-            Console.WriteLine(a);
-            Console.WriteLine("в) a7 за четыре операции;");
-            num = a * a;
-            int num2 = num * num;
-            a = num2 * num2 / a;
-            Console.WriteLine(a);
-            Console.WriteLine("г) a8 за три операции;");
+            Console.Write("Введите число a: ");
+            double a = double.Parse(Console.ReadLine());
+            double A = a;
+            a = A;
             a = a * a;
             a = a * a;
+            Console.WriteLine($"a) a^4 = {a}");
+            
+            a = A;
+            double a2 = a * a;
+            double a3 = a2 * a;
+            a = a3 * a3;
+            Console.WriteLine($"б) a^6 = {a}");
+            
+            a = A;
+            a2 = a * a;
+            double a4 = a2 * a2;
+            a = a4 * a2 * a;
+            Console.WriteLine($"в) a^7 = {a}");
+            
+            a = A;
             a = a * a;
-            Console.WriteLine(a);
-            Console.WriteLine("д) a9 за четыре операции;");
-            num = a * a * a;
-            a = num * num * num;
-            Console.WriteLine(a);
-            Console.WriteLine("е) a10  за четыре операции.");
-            num = a * a;
-            num2 = num * num;
-            a = num2 * num2 * num2;
-            Console.WriteLine(a);
+            a = a * a;
+            a = a * a;
+            Console.WriteLine($"г) a^8 = {a}");
+            
+            a = A;
+            a3 = a * a * a;
+            a = a3 * a3 * a3;
+            Console.WriteLine($"д) a^9 = {a}");
+            
+            a = A;
+            a2 = a * a;
+            a4 = a2 * a2;
+            double a5 = a4 * a;
+            a = a5 * a5;
+            Console.WriteLine($"е) a^10 = {a}");
         }
     }
 }
